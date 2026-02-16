@@ -20,7 +20,7 @@ const textReveal = {
   visible: { 
     y: "0%", 
     opacity: 1, 
-    transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] } 
+    transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] as const } 
   }
 };
 
@@ -37,7 +37,7 @@ export default function AboutSection() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] opacity-70">About Us</span>
         </div>
 
-        {/* --- PART 1: TYPOGRAPHY GRID --- */}
+        {/* --- PART 1: TYPOGRAPHY GRID --- */}  
         <div className="flex flex-col gap-6 md:gap-8 mb-24 w-full">
           
           {/* ROW 1: "MAXIMIZE IT" + [ANIMATED PILL] */}
