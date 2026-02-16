@@ -192,7 +192,7 @@ export default function HeroScrollAnimation() {
 
       zIndex: zIndex,
 
-      transition: { type: "spring", stiffness: 200, damping: 20 }
+      transition: { type: "spring" as const, stiffness: 200, damping: 20 }
 
     };
 
